@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #018a3a;
+    /* background-image: url('1.png');
+    background-size: cover;
+    height: 100vh; */
+    /* width: 1080px; */
+    /* height: 1920px; */
+}
+.border {
+    border: 2px solid red;
+}
+.container {
+    position: relative;
+}
+.box {
+    width: 445px;
+    height: 104px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-49%, 259%);
+    z-index: 10;
+    cursor: pointer;
+}
+
+  .container .bg-img {
+    height: 1087px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+  }
+  .container .subway {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    transform: translate(-50%, -58%);
+    width: 550px;
+  }
+  .container .spin {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    transform: translate(-50%, -46%);
+    width: 550px;
+  }
+  .container .cir-wheel {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    transform: translate(-50%, -50%);
+    width: 550px;
+  }
+  .container .wheel {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    transform: translate(-50%, -50%);
+    width: 614px;
+  }
+  .container .arrow {
+    position: absolute;
+    top: 0px;
+    left: 0;
+    transform: translate(-50%, -400%);
+    width: 48px;
+  }
+
+
+
+
+
+
+
+
+
+
+/* @media (min-width: 768px) {
+    .container {
+      width: 750px;
+    }
+  }
+  @media (min-width: 992px) {
+    .container {
+      width: 970px;
+    }
+  }
+  @media (min-width: 1200px) {
+    .container {
+      width: 1170px;
+    }
+  } */
