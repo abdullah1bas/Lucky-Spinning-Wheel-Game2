@@ -21,6 +21,9 @@ body {
 }
 .container {
     position: relative;
+    top: 100px;
+    left: 0;
+    transform: translate(-50%, 50%);
 }
 .box {
     width: 445px;
