@@ -1,128 +1,136 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background: #018a3a;
-    /* background-image: url('1.png');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #018a3a;
+  /* background-image: url('1.png');
     background-size: cover;
     height: 100vh; */
-    /* width: 1080px; */
-    /* height: 1920px; */
+  /* width: 1080px; */
+  /* height: 1920px; */
 }
 .border {
-    border: 2px solid red;
+  border: 2px solid red;
 }
 .container {
-    position: relative;
-    top: 100px;
-    left: 0;
-    transform: translate(-50%, 50%);
-    height: 387px;
+  position: relative;
+  top: 100px;
+  left: 0;
+  transform: translate(-50%, 50%);
+  height: 387px;
 }
 .box {
-    width: 341px;
-    height: 85px;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-49%, 98%);
-    z-index: 10;
-    cursor: pointer;
+  width: 341px;
+  height: 85px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translate(-49%, 98%);
+  z-index: 10;
+  cursor: pointer;
+}
+.container .spin,
+.container .subway,
+.container .arrow,
+.container .cir-wheel,
+.container .wheel,
+.container .bg-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.container .bg-img {
+  transform: translate(-50%, -65%);
+}
+.container .wheel {
+  transform: translate(-50%, -83%);
+  width: 481px;
+  transition: transform 8s ease-in-out;
+}
+.container .cir-wheel {
+  transform: translate(-50%, -65%);
+  width: 460px;
+}
+.container .spin {
+  transform: translate(-50%, -62%);
+  width: 420px;
+}
+.container .subway {
+  transform: translate(-50%, -69%);
+  width: 460px;
 }
 
-  .container .bg-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate(-50%, -65%);
-  }
-  .container .wheel {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    transform: translate(-50%, -65%);
-    width: 481px;
-  }
-  .container .cir-wheel {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    transform: translate(-50%, -65%);
-    width: 460px;
-  }
-  .container .spin {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    transform: translate(-50%, -62%);
-    width: 420px;
-  }
-  .container .subway {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    transform: translate(-50%, -69%);
-    width: 460px;
-  }
-
-  .container .arrow {
-    position: absolute;
-    top: 0px;
-    left: 0;
-    transform: translate(-50%, -639%);
-    width: 37px;
-  }
-
-
-
-
-
-
-
-
-
+.container .arrow {
+  transform: translate(-50%, -639%);
+  width: 37px;
+}
+.winner {
+  width: 300px;
+  height: 200px;
+  background-color: #018a3a;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 6px;
+  display: none;
+}
+.winner p {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
 
 @media (max-width: 768px) {
-    .container {
-      top: 182px;
-      height: 0;
-    }
-    .container .bg-img,
-    .container .wheel, 
-    .container .cir-wheel,
-    .container .spin,
-    .container .subway {
-        width: 383px;
-        transform: translate(-50%, -81%);
-    }
-    .container .arrow {
-        transform: translate(-50%, -885%);
-        width: 30px;
-    }
+  .container {
+    top: 182px;
+    height: 0;
   }
-
-
-
+  .container .box {
+    width: 315px;
+    transform: translate(-49%, -66%);
+  }
+  .container .bg-img,
+  .container .wheel,
+  .container .cir-wheel,
+  .container .spin,
+  .container .subway {
+    width: 383px;
+    transform: translate(-50%, -81%);
+  }
+  .container .wheel {
+    transform: translate(-50%, -114%);
+  }
+  .container .arrow {
+    transform: translate(-50%, -885%);
+    width: 30px;
+  }
+}
 
 @media (min-width: 768px) {
-    .container .bg-img {
-        height: 850px;
-    }
+  .container .bg-img {
+    height: 850px;
   }
-  @media (min-width: 992px) {
-    .container {
-      /* width: 970px; */
-    }
+}
+@media (min-width: 992px) {
+  .container {
+    /* width: 970px; */
   }
-  @media (min-width: 1200px) {
-    .container {
-      /* width: 1170px; */
-    }
+}
+@media (min-width: 1200px) {
+  .container {
+    /* width: 1170px; */
   }
+}
